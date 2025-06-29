@@ -10,14 +10,6 @@ import (
 	"github.com/mark3labs/mcp-go/server"
 )
 
-type WordleAPIData struct {
-	Id              int    `json:"id"`
-	Solution        string `json:"solution"`
-	PrintDate       string `json:"print_date"`
-	DaysSinceLaunch int    `json:"days_since_launch"`
-	Editor          string `json:"editor"`
-}
-
 func main() {
 	s := server.NewMCPServer(
 		"Wordle MCP",
