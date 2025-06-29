@@ -1,0 +1,23 @@
+# Ignore Git stuff
+.git
+.gitignore
+
+# Go build artifacts
+bin/
+*.exe
+*.test
+*.out
+
+# Dependencies
+vendor/
+
+# Editor/IDE files
+*.swp
+*.swo
+*.DS_Store
+.idea/
+.vscode/
+
+# Docker files not needed in image
+Dockerfile
+docker-compose.yml
