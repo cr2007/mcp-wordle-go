@@ -1,6 +1,7 @@
 # Ignore Git stuff
 .git
 .gitignore
+.gitattributes
 
 # Go build artifacts
 bin/
@@ -21,3 +22,8 @@ vendor/
 # Docker files not needed in image
 Dockerfile
 docker-compose.yml
+
+README.md
+
+# Image files
+*.png
