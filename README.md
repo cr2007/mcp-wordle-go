@@ -3,9 +3,12 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cr2007/mcp-wordle-go)
 
+> [!NOTE]
+> To check out the Python version of this MCP Server, [click here](https://github.com/cr2007/mcp-wordle-python)
+
 A MCP Server implemented in Go for fetching the Wordle solutions via the Wordle API.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Wordle solutions are only available from 2021-05-19, to 23 days in the future.<br>
 > Any other attempts at calling other dates will return an error from the API
 
@@ -46,7 +49,7 @@ Add this to your MCP Server configuration:
 }
 ```
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > If you get an error on Claude Desktop for the first time, just make sure to pull the image before running.<br>
 > `docker pull ghcr.io/cr2007/mcp-wordle-go:latest`
 
@@ -75,8 +78,8 @@ Add this to your MCP server configuration:
 ```json
 {
   "mcpServers": {
-    "Wordle-MCP-Go":{   
-        "command": "ABSOLUTE//PATH//TO//THE/EXECUTABLE//FILE",
+    "Wordle-MCP-Go":{
+        "command": "ABSOLUTE//PATH//TO//main.go",
       }
   }
 }
