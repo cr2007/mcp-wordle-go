@@ -1,0 +1,18 @@
+{
+	"name": "Wordle MCP Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/go:1.24",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.go",
+				"ms-vsliveshare.vsliveshare",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"eamodio.gitlens",
+				"usernamehw.errorlens",
+				"aaron-bond.better-comments",
+				"vscode-icons-team.vscode-icons"
+			]
+		}
+	},
+	"postCreateCommand": "go mod tidy"
+}
