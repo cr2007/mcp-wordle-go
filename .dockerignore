@@ -22,8 +22,13 @@ vendor/
 # Docker files not needed in image
 Dockerfile
 docker-compose.yml
+.dockerignore
 
 README.md
 
 # Image files
 *.png
+
+.devcontainer/
+.github/
+images/
