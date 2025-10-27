@@ -2,6 +2,7 @@
 # Wordle MCP - Go
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cr2007/mcp-wordle-go)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/cr2007/mcp-wordle-go)
 
 > [!NOTE]
 > To check out the Python version of this MCP Server, [click here](https://github.com/cr2007/mcp-wordle-python)
