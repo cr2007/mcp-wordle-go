@@ -21,7 +21,7 @@ func main() {
 		mcp.WithDescription("Fetches the Wordle of a particular date provided between 2021-05-19 to 23 days future"),
 		mcp.WithString("date",
 			mcp.Required(),
-			mcp.Description("The date to be passed on to the Wordle API")),
+			mcp.Description("The date to be passed on to the Wordle API (YYYY-MM-DD format)")),
 	)
 
 	s.AddTool(tool, getWordleData)
