@@ -19,7 +19,6 @@ jobs:
       IMAGE: ghcr.io/${{ github.repository }}
 
     steps:
-      - uses: actions/checkout@v6
       - name: Normalize image name
         run: echo "IMAGE=${IMAGE,,}" >> $GITHUB_ENV
       - name: Login to GitHub Container Registry
@@ -35,7 +34,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v7
         with:
-          context: .
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
