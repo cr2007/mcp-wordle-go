@@ -1,4 +1,4 @@
-FROM golang:1.25 AS builder
+FROM golang:1.27 AS builder
 
 # Install UPX for binary compression, and CA certs for outbound HTTPS
 # (the app calls the NYT Wordle API), since the final image has no package manager to fetch them.
